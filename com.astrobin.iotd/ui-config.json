@@ -1,0 +1,14 @@
+{
+	"inputs": [
+		{
+			"name": "apiKey",
+			"type": "text",
+			"prompt": "API Key"
+		},
+		{
+			"name": "apiSecret",
+			"type": "text",
+			"prompt": "API Secret"
+		},
+	]
+}

@@ -1,0 +1,1 @@
+This connector gets images from Astrobin. [You'll need to apply for an API key](https://welcome.astrobin.com/application-programming-interface)
