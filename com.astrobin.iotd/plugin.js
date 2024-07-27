@@ -54,7 +54,7 @@ function load() {
                 var resultItem = Item.createWithUriDate(iotdUri, iotdDate);
                 resultItem.author = creator;
                 resultItem.title = parsedImageData["title"];
-                resultItem.body = parsedImageData["description"];
+                resultItem.body = `<p>${parsedImageData["description"]}</p>`;
                 resultItem.attachments = [attachment];
                 resultItem.annotations = [likesAnnotation, viewsAnnotation];
 
