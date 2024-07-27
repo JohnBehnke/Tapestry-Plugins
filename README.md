@@ -6,7 +6,7 @@ Connectors for the [Tapestry app](https://www.kickstarter.com/projects/iconfacto
 
 The official documentation for the JavaScript-based API used to build connectors for Tapestry can be found at [TheIconfactory/Tapestry](https://github.com/theiconfactory/tapestry).
 
-### Plugins
+### Connectors
 
 The repository contains the following plugins.
 
