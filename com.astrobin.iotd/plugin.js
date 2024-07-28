@@ -3,15 +3,13 @@
 var lastDate = null;
 const host = "https://astrobin.com";
 const apiPath = "api/v1";
-const minuteThreshold = 1440;
+const minuteThreshold = 60;
 
 function load() {
-  const authParams = `api_key=${apiKey}&api_secret=${apiSecret}`;
+  const authParams = `api_key=${apiKey}&api_secret=${apiSecret}`; 
   const date = new Date();
-
   if (Math.floor((date - lastDate) / 1000 / 60) > minuteThreshold) {
     let iotdUrl = `${host}/${apiPath}/imageoftheday?limit=1&${authParams}&format=json`;
-
     sendRequest(iotdUrl)
       .then((iotdRawData) => {
         const parsedIOTDData = JSON.parse(iotdRawData);
@@ -59,7 +57,7 @@ function load() {
                 resultItem.annotations = [likesAnnotation, viewsAnnotation];
 
                 processResults([resultItem]);
-                lastDate = iotdDate;
+                lastDate = date;
               })
               .catch((requestError) => {
                 processError(requestError);
